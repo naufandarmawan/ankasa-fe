@@ -9,7 +9,7 @@ function RegisterPage() {
           <div className="flex flex-col grow justify-center items-center px-20 py-64 h-screen w-full bg-blue-500 max-md:px-5 max-md:py-24 max-md:mt-10 max-md:max-w-full max-md:hidden">
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ff6891ca6047709b36d6417c0243c6fac65d02bae89e6acfa34b931eef685b57?apiKey=ff034d5512384628b4f5c1152f7ba035&&apiKey=ff034d5512384628b4f5c1152f7ba035"
+              src=""
               alt=""
               className="object-contain max-w-full aspect-[0.93] w-[463px]"
             />
@@ -20,7 +20,7 @@ function RegisterPage() {
             <div className="flex gap-4 self-start text-2xl font-semibold whitespace-nowrap text-neutral-700">
               <img
                 loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/135c443b26ade2c1557ae349c20f8403f2f4843d2ada7cb3c896fd11c955586b?apiKey=ff034d5512384628b4f5c1152f7ba035&&apiKey=ff034d5512384628b4f5c1152f7ba035"
+                src=""
                 alt="Ankasa logo"
                 className="object-contain shrink-0 self-start aspect-[1.47] w-[50px]"
               />
