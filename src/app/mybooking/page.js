@@ -1,6 +1,6 @@
 import CardBooking from '@/components/base/card'
 import React from 'react'
-import ImageDefault from '../../../public/296fe121-5dfa-43f4-98b5-db50019738a7.jpg';
+import ImageDefault from '../../../public/next.svg';
 import Image from 'next/image';
 import { Button } from '@mui/material';
 import Cards from '@/components/base/cards/cards';
