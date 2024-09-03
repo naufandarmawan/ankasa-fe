@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 
@@ -27,7 +27,7 @@ const InputField = ({
         />
         {showPasswordToggle && (
           <img
-            src=""
+            src="/eye.svg"
             alt="Toggle password visibility"
             className="object-contain absolute right-28 shrink-0 w-6 aspect-square cursor-pointer"
             onClick={() => setShowPassword(!showPassword)}
