@@ -1,14 +1,25 @@
+import {
+  Facebook,
+  Instagram,
+  PlaceOutlined,
+  Twitter,
+  YouTube,
+} from "@mui/icons-material";
+import Image from "next/image";
 import React from "react";
-import Link from "next/link";
+import GooglePlay from "../../../../public/google-play.png";
+import AppStore from "../../../../public/app-store.png";
+import AnkasaLogo from "../../../../public/logo.svg";
 
 const Footer = () => {
   return (
     <div className="px-40 py-16 flex flex-col gap-10">
-      <div className="flex gap-20">
+      <div className="flex gap-20 justify-between">
         <div className="flex flex-col gap-8">
-          <p>Ankasa</p>
+          <Image src={AnkasaLogo} />
           <p className="font-normal text-sm text-[#6B6B6B] leading-8">
-            Find your Flight and explore the world with us. We will take care of the rest
+            Find your Flight and explore the <br />
+            world with us. We will take care of the rest
           </p>
         </div>
 
@@ -23,29 +34,35 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-8">
-          <p className="font-medium text-base text-black">Download Angkasa app</p>
-          <div>
-            <p>App Store</p>
-            <p>Google Play</p>
+          <p className="font-medium text-base text-black">
+            Download Angkasa app
+          </p>
+          <div className="flex flex-col gap-5">
+            <Image src={GooglePlay} />
+            <Image src={AppStore} />
           </div>
         </div>
 
         <div className="flex flex-col gap-8">
           <p className="font-medium text-base text-black">Follow Us</p>
           <div className="flex gap-5">
-            <p>FB</p>
-            <p>TW</p>
-            <p>IG</p>
-            <p>YT</p>
+            <Facebook style={{ color: "#595959" }} sx={{ fontSize: 24 }} />
+            <Twitter style={{ color: "#595959" }} sx={{ fontSize: 24 }} />
+            <Instagram style={{ color: "#595959" }} sx={{ fontSize: 24 }} />
+            <YouTube style={{ color: "#595959" }} sx={{ fontSize: 24 }} />
           </div>
         </div>
       </div>
 
       <div className="flex justify-between items-center">
-        <p className="font-normal text-base text-[#6B6B6B] leading-8">© Ankasa. All Rights Reserved.</p>
+        <p className="font-normal text-base text-[#6B6B6B] leading-8">
+          © Ankasa. All Rights Reserved.
+        </p>
         <div className="flex gap-2 items-center">
-          <p className="font-normal text-sm text-[#595959]">Pin</p>
-          <p className="font-normal text-sm text-[#6B6B6B]">Jakarta Indonesia</p>
+          <PlaceOutlined style={{ color: "#595959" }} sx={{ fontSize: 24 }} />
+          <p className="font-normal text-sm text-[#6B6B6B]">
+            Jakarta Indonesia
+          </p>
         </div>
       </div>
     </div>
