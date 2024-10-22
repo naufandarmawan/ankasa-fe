@@ -10,6 +10,7 @@ import {
   Stack,
 } from "@mui/material";
 import { EmailOutlined, NotificationsOutlined } from "@mui/icons-material";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -19,9 +20,16 @@ const Navbar = () => {
       alignItems="center"
       spacing={0}
       sx={{ minWidth: "auto" }}
-      className="px-40 py-10"
+      className="px-40 py-6"
     >
-      <p>Logo</p>
+      <Image
+        loading="lazy"
+        src="/angkasalogo.svg"
+        alt="Ankasa logo"
+        className="object-contain shrink-0 w-[150px]"
+        width={50}
+        height={50}
+      />
       <Paper
         component="form"
         sx={{ p: "2px 4px", display: "flex", alignItems: "center", width: 400 }}
@@ -42,18 +50,11 @@ const Navbar = () => {
           <EmailOutlined />
         </IconButton>
       </Paper>
-      <Stack
-        direction="row"
-        spacing={2}
-      >
+      <Stack direction="row" spacing={2}>
         <Button variant="text">Text 1</Button>
         <Button variant="text">Text 2</Button>
       </Stack>
-      <Stack
-        direction="row"
-        spacing={2}
-        alignItems="center"
-      >
+      <Stack direction="row" spacing={2} alignItems="center">
         <EmailOutlined />
         <NotificationsOutlined />
         <Avatar>H</Avatar>
